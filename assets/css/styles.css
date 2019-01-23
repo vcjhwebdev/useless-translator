@@ -5,10 +5,27 @@ body {
   text-align: center;
 }
 
-a {
+p {
+  top: 40px;
+  position: relative;
+}
+
+.buttona {
   color:#00ffff;
 	background: linear-gradient(to bottom left, #0000ff, #00ff00);
   border: 10px ridge #9500ff;
+  padding: 10px 20px;
+  top: 20px;
+  position: relative;
+}
+
+.buttonb {
+  color:#00ffff;
+	background: linear-gradient(to bottom left, #0000ff, #00ff00);
+  border: 10px ridge #9500ff;
+  padding: 10px 20px;
+  top: 60px;
+  position: relative;
 }
 
 
