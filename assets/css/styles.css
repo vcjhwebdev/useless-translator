@@ -1,0 +1,119 @@
+/* CSS */
+body {
+	color: #00ffff;
+	background: radial-gradient(to bottom left, #0000ff, #00ff00);
+}
+
+/*
+
+		BASIC STRUCTURE
+
+*/
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+#header{
+	height: 100px;
+}
+
+#content{
+	float: right;
+	width: 600px;
+}
+
+#sidebar{
+	float: left;
+	width: 300px;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+#footer {
+	clear: both;
+}
+#header, #content, #sidebar/*, #footer*/ {
+	background-color:rgba(0,0,0,0.5);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* Color Picker: color.adobe.com */
+
+/********************************************************
+RESPONSIVE WIDTH (MEDIA QUERIES)
+********************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+	#wrapper {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+
+}
+
+/* iPhone 5S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	body {
+		font-size: 40px;
+	}
+	#header {
+		height: auto;
+	}
+	#content {
+		width: auto;
+	}
+	#sidebar {
+		clear: both;
+		width: auto;
+	}
+	select, input {
+		font-size: 32px;
+	}
+	.checkbox {
+		width: 40px;
+		height: 40px;
+	}
+	#header, #sidebar, #content, #footer {
+		border-radius: 32px;
+		border-width: 16px;
+	}
+
+}
