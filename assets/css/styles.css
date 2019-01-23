@@ -4,6 +4,13 @@ body {
 	background: radial-gradient(to bottom left, #0000ff, #00ff00);
 }
 
+a {
+  color:#00ff00;
+  right:10px;
+  background-color:black;
+  border: 10px ridge #9500ff;
+}
+
 /*
 
 		BASIC STRUCTURE
