@@ -1,4 +1,9 @@
 /* CSS */
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	color: #00ff00;
   background-color:black;
@@ -31,21 +36,14 @@ p {
 label{
 	background-color: #000000;
 	color: #00ff00;
+	display: block;
 }
 
 textarea {
 	background-color: #000000;
 	color: #00ff00;
+	width: 100%;
 }
-/*
-.englisht {left: 30%}
-
-.englishl {left: 32.5%}
-
-.binaryl {right: 32.5%}
-
-.binaryt {right: 30%}*/
-
 /*
 
 		BASIC STRUCTURE
@@ -68,7 +66,7 @@ textarea {
 
 #sidebar{
 	float: left;
-	width: 300px;
+	width: 100%;
 	font-family: "Comic Sans MS", sans-serif;
 }
 
