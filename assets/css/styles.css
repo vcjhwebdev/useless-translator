@@ -29,26 +29,22 @@ p {
 }
 
 label{
-	top:50%;
-	position: absolute;
 	background-color: #000000;
 	color: #00ff00;
 }
 
 textarea {
-	top:55%;
-	position: absolute;
 	background-color: #000000;
 	color: #00ff00;
 }
-
+/*
 .englisht {left: 30%}
 
 .englishl {left: 32.5%}
 
 .binaryl {right: 32.5%}
 
-.binaryt {right: 30%}
+.binaryt {right: 30%}*/
 
 /*
 
