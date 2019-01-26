@@ -1,4 +1,4 @@
-#Morse Code and Binary Translator
+Morse Code and Binary Translator
 
 A mostly useless translator for binary and morse code
 
