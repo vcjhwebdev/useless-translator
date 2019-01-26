@@ -1,19 +1,20 @@
-# APP NAME HERE
+#Morse Code and Binary Translator
 
-APP DESCRIPTION HERE
+A mostly useless translator for binary and morse code
 
 ## Authors
 
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
-- [STUDENT NAME HERE](http://link-to-website-here/)
+- [Peyton Quang](http://link-to-website-here/)
+- [Jonah](http://link-to-website-here/)
+- [Viraj Ghose](http://swiftninja99.github.io)
 
 ## Features
 
-- APP FEATURES HERE
+-Translate English to Binary, and vice versa
+-Translate English to Mortse Code, and vice versa
 
 ### Changelog
 
 **Version 0.1**
 
-- CHANGES HERE
+- Added Text boxes and styling
