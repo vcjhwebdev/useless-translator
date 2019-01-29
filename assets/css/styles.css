@@ -5,32 +5,28 @@
 }
 
 body {
+	font-size: 20px;
 	color: #00ff00;
   background-color:black;
-  text-align: center;
+	margin: 50px 50px;
 }
 
 p {
-  top: 40px;
-  position: relative;
+	margin: 100px 100px;
 }
 
-.buttona {
-  color:#00ffff;
-	background: linear-gradient(to bottom left, #0000ff, #00ff00);
-  border: 10px ridge #9500ff;
-  padding: 10px 20px;
-  top: 20px;
-  position: relative;
+header {
+	text-align: center;
 }
 
-.buttonb {
+.button {
   color:#00ffff;
+	font-size: 60px;
 	background: linear-gradient(to bottom left, #0000ff, #00ff00);
-  border: 10px ridge #9500ff;
-  padding: 10px 20px;
-  top: 60px;
-  position: relative;
+  border: 25px ridge #9500ff;
+	height: 200px;
+	width: 804px;
+	padding: 30px 30px;
 }
 
 label{
