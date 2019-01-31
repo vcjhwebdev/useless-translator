@@ -4,9 +4,9 @@ A mostly useless translator for binary and morse code
 
 ## Authors
 
-- [Peyton Quang](http://link-to-website-here/)
+- [Peyton Quang](https://deadseye40.github.io/)
 - [Jonah](http://link-to-website-here/)
-- [Viraj Ghose](http://swiftninja99.github.io)
+- [Goose boi](http://swiftninja99.github.io)
 
 ## Features
 
