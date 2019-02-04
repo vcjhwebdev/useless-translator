@@ -12,10 +12,22 @@
     </header>
     <form id="sidebar" style="width:100%;">
       <label>Translate to:</label>
-      <input type="radio" name="language" value="binary">English > Binary</input><br>
-      <input type="radio" name="language" value="binary">Binary > English</input><br>
-      <input type="radio" name="language" value="binary">English > Morse</input><br>
-      <input type="radio" name="language" value="binary">Morse > English</input>
+      <input id="english-to-binary" type="radio" name="language" value="engToBin">
+      <label for="english-to-binary">English > Binary</label>
+      <input id="binary-to-english" type="radio" name="language" value="binToEng">
+      <label for="binary-to-english">Binary > English</label>
+      <input id="english-to-morse" type="radio" name="language" value="engToMorse">
+      <label for="english-to-morse"> English > Morse</label>
+      <input id="morse-to-english" type="radio" name="language" value="MorseToEng">
+      <label for="morse-to-english"> Morse > English</label>
+
+      <input type="radio" name="language" value="binary">Morse > English
+      <script type='text/javascript'>
+      function translate() {
+        window.open
+      }
+
+      </script>
       <textarea></textarea>
       <br>
       <br>
