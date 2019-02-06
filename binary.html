@@ -20,7 +20,7 @@
 
   function convertEnglish() {
     y = document.getElementById("inputEnglish").value;
-    document.getElementById("outputEnglish").value = parseInt(y, 2).toString(10);
+    document.getElementById("outputEnglish").value = String.fromCharCode(parseInt(y, 2).toString(10));
   }
 
 </script>
