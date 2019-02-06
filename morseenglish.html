@@ -1,55 +1,54 @@
 <script type="text/javascript">
-  var charCodes=new Array(36); charCodes[". _"]="a";
-  charCodes["_ . . ."]="b";
-  charCodes["_ . _ ."]="c";
-  charCodes["_ . ."]="d";
-  charCodes["."]="e";
-  charCodes[". . _ ."]="f";
-  charCodes["_ _ ."]="g";
-  charCodes[". . . ."]="h";
-  charCodes[". ."]="i";
-  charCodes[". _ _ _"]="j";
-  charCodes["_ . _"]="k";
-  charCodes[". _ . ."]="l";
-  charCodes["_ _"]="m";
-  charCodes["_ ."]="n";
-  charCodes["_ _ _"]="o";
-  charCodes[". _ _ ."]="p";
-  charCodes["_ _ . _"]="q";
-  charCodes[". _ ."]="r";
-  charCodes[". . ."]="s";
-  charCodes["_"]="t";
-  charCodes[". . _"]="u";
-  charCodes[". . . _"]="v";
-  charCodes[". _ _"]="w";
-  charCodes["_ . . _"]="x";
-  charCodes["_ . _ _"]="y";
-  charCodes["_ _ . ."]="z";
-  charCodes[". _ _ _ _"]="1";
-  charCodes[". . _ _ _"]="2";
-  charCodes[". . . _ _"]="3";
-  charCodes[". . . . _"]="4";
-  charCodes[". . . . ."]="5";
-  charCodes["_ . . . ."]="6";
-  charCodes["_ _ . . ."]="7";
-  charCodes["_ _ _ . ."]="8";
-  charCodes["_ _ _ _ ."]="9";
-  charCodes["_ _ _ _ _"]="0";
-  charCodes["/"]="/";
+  var charCodes=new Array(36); charCodes[". _   "]="a";
+  charCodes["_ . . .   "]="b";
+  charCodes["_ . _ .   "]="c";
+  charCodes["_ . .   "]="d";
+  charCodes[".   "]="e";
+  charCodes[". . _ .   "]="f";
+  charCodes["_ _ .   "]="g";
+  charCodes[". . . .   "]="h";
+  charCodes[". .   "]="i";
+  charCodes[". _ _ _   "]="j";
+  charCodes["_ . _   "]="k";
+  charCodes[". _ . .   "]="l";
+  charCodes["_ _   "]="m";
+  charCodes["_ .   "]="n";
+  charCodes["_ _ _   "]="o";
+  charCodes[". _ _ .   "]="p";
+  charCodes["_ _ . _   "]="q";
+  charCodes[". _ .   "]="r";
+  charCodes[". . .   "]="s";
+  charCodes["_   "]="t";
+  charCodes[". . _   "]="u";
+  charCodes[". . . _   "]="v";
+  charCodes[". _ _   "]="w";
+  charCodes["_ . . _   "]="x";
+  charCodes["_ . _ _   "]="y";
+  charCodes["_ _ . .   "]="z";
+  charCodes[". _ _ _ _   "]="1";
+  charCodes[". . _ _ _   "]="2";
+  charCodes[". . . _ _   "]="3";
+  charCodes[". . . . _   "]="4";
+  charCodes[". . . . .   "]="5";
+  charCodes["_ . . . .   "]="6";
+  charCodes["_ _ . . .   "]="7";
+  charCodes["_ _ _ . .   "]="8";
+  charCodes["_ _ _ _ .   "]="9";
+  charCodes["_ _ _ _ _   "]="0";
+  charCodes["/"]=" ";
   var temp=''
 
   function encode() {
-    document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
     document.morsecode.codebox.value="";
     temp=''
 
-    var chars=document.morsecode.chars.value.split("");
+    var chars=document.morsecode.chars.value//.split("");
 
-    for (a=0; a<chars.length; a++) {
+    for (a=0; a<5; a++) {
       if (chars[a]!=" ") {
         if (window.charCodes[chars[a]]) {
           document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
-          temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+          //temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
         }
         else
         temp+=chars[a]+"=(None)\n";
@@ -61,6 +60,6 @@
 </script>
 
 <form name="morsecode">
-Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Encode" onClick="encode()"><BR><BR>
+Type in a word or phrase: <input type="text" name="chars" size="28"> <input type="BUTTON" value="Translate" onClick="encode()"><BR><BR>
 <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
 </form>
