@@ -4,7 +4,7 @@ A mostly useless translator for binary and morse code
 
 ## Authors
 
-- [Peyton Quang](https://deadseye40.github.io/)
+- [Peyton Quang(The Guy Who Deserted Us)](https://deadseye40.github.io/)
 - [Jonah](http://link-to-website-here/)
 - [Viraj](http://swiftninja99.github.io)
 
