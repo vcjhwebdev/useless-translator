@@ -44,7 +44,7 @@
 
     var chars=document.morsecode.chars.value//.split("");
 
-    for (a=0; a<5; a++) {
+    for (a=0; a<chars.length; a++) {
       if (chars[a]!=" ") {
         if (window.charCodes[chars[a]]) {
           document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
