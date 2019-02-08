@@ -34,7 +34,7 @@
   charCodes["7"]="00110111";
   charCodes["8"]="00111000";
   charCodes["9"]="00111001";
-  charCodes["0"]="00110000";
+ charCodes["0"]="00110000";
   charCodes["A"]="01000001";
   charCodes["B"]="01000010";
   charCodes["C"]="01000011";
@@ -78,16 +78,17 @@
   charCodes["/"]="00101111";
   charCodes["?"]="00111111";
   charCodes["@"]="01000000";
+  charCodes["␣"]="00100000";
   charCodes["_"]="01011111";
-  charCodes[" "]="00100000";
+
   var temp=''
 
   function encode() {
-    document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
+    document.morsecode.chars.value=document.morsecode.chars.value;
     document.morsecode.codebox.value="";
     temp=''
 
-    var chars=document.morsecode.chars.value.split("").join("00100000");
+    var chars=document.morsecode.chars.value.split(" ").join("␣");
 
     for (a=0; a<chars.length; a++) {
       if (chars[a]!=" ") {
