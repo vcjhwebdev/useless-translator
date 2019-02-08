@@ -5,8 +5,8 @@ A mostly useless translator for binary and morse code
 ## Authors
 
 - [Peyton Quang](http://link-to-website-here/)
-- [Jonah](http://link-to-website-here/)
-- [Viraj Ghose](http://swiftninja99.github.io)
+- [Jonah Ivanov](http://link-to-website-here/)
+- [Viral Ghost](http://swiftninja99.github.io)
 
 ## Features
 
