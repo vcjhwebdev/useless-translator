@@ -11,7 +11,7 @@ A mostly useless translator for binary and morse code
 ## Features
 
 -Translate English to Binary, and vice versa
--Translate English to Mortse Code, and vice versa
+-Translate English to Morse Code, and vice versa
 
 ### Changelog
 
