@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  var charCodes=new Array(79); charCodes["a"]="01100001";
+  var charCodes=new Array(80); charCodes["a"]="01100001";
   charCodes["b"]="01100010";
   charCodes["c"]="01100011";
   charCodes["d"]="01100100";
@@ -79,6 +79,7 @@
   charCodes["?"]="00111111";
   charCodes["@"]="01000000";
   charCodes["_"]="01011111";
+  charCodes[" "]="00100000";
   var temp=''
 
   function encode() {
@@ -86,7 +87,7 @@
     document.morsecode.codebox.value="";
     temp=''
 
-    var chars=document.morsecode.chars.value.split(" ").join("/");
+    var chars=document.morsecode.chars.value.split("").join("00100000");
 
     for (a=0; a<chars.length; a++) {
       if (chars[a]!=" ") {
