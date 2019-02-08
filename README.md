@@ -6,7 +6,7 @@ A mostly useless translator for binary and morse code
 
 - [Peyton Quang](https://deadseye40.github.io/)
 - [Jonah](http://link-to-website-here/)
-- [Goose boi](http://swiftninja99.github.io)
+- [Viraj](http://swiftninja99.github.io)
 
 ## Features
 
