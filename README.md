@@ -18,3 +18,10 @@ A mostly useless translator for binary and morse code
 **Version 0.1**
 
 - Added Text boxes and styling
+**Version 0.2**
+
+- Added Morse Code translator
+
+**Version 0.3**
+
+- Added Binary translator and spaces
