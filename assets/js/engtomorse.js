@@ -1,4 +1,5 @@
-var charCodes=new Array(36); charCodes["a"]=". _";
+var charCodes=new Array(36);
+charCodes["a"]=". _";
 charCodes["b"]="_ . . .";
 charCodes["c"]="_ . _ .";
 charCodes["d"]="_ . .";
@@ -37,7 +38,7 @@ charCodes["0"]="_ _ _ _ _";
 charCodes["/"]="/";
 var temp=''
 
-function encode() {
+function encodeToMorse() {
   document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
   document.morsecode.codebox.value="";
   temp=''
