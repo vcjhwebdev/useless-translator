@@ -8,25 +8,24 @@ body {
 	font-size: 20px;
 	color: #00ff00;
   background-color:black;
-	margin: 50px 50px;
-}
-
-p {
-	margin: 100px 100px;
+	/*margin: 30px 30px;*/
+	font-family: "Comic Sans MS", sans-serif;
+	text-align: center;
 }
 
 header {
 	text-align: center;
 }
 
-.button {
+#title {
   color:#00ffff;
-	font-size: 60px;
+	font-size: 40px;
 	background: linear-gradient(to bottom left, #0000ff, #00ff00);
-  border: 25px ridge #9500ff;
-	height: 200px;
-	width: 804px;
-	padding: 30px 30px;
+  border: 10px ridge #9500ff;
+	height: 20%;
+	width: 40%;
+	/*padding: 30px 30px;*/
+	margin: 20px auto;
 }
 
 label{
@@ -40,15 +39,15 @@ textarea {
 	color: #00ff00;
 	width: 100%;
 }
-/*
 
-		BASIC STRUCTURE
+/*BASIC STRUCTURE*/
 
-*/
 #wrapper {
-	width: 960px;
-	padding: 5px;
-	margin: 20px auto;
+	width: 100%;
+	height: 100%;
+	/*padding: 5px;*/
+	/*margin: 20px auto;*/
+	border: 10px double #00ff0055
 }
 
 #header{
@@ -60,22 +59,28 @@ textarea {
 	width: 600px;
 }
 
-#sidebar{
+#rightbar{
+	float: right;
+	width: 30%;
+	margin: 20px auto;
+}
+
+#leftbar {
 	float: left;
-	width: 100%;
-	font-family: "Comic Sans MS", sans-serif;
+	width: 30%;
+	margin: 20px auto;
 }
 
 #footer {
 	clear: both;
 }
-#header, #content, #sidebar/*, #footer*/ {
+#header, #content, #rightbar, #footer, #leftbar {
 	background-color:rgba(0,0,0,0.5);
-	margin-bottom: 4px;
-	border: double;
+	/*margin-bottom: 4px;*/
+	border: double #00ff0055;
 	border-radius: 8px;
-	padding-left: 4px;
-	padding-right: 4px;
+	/*padding-left: 4px;*/
+	/*padding-right: 4px;*/
 }
 
 /* Color Picker: color.adobe.com */
@@ -92,7 +97,7 @@ RESPONSIVE WIDTH (MEDIA QUERIES)
 	#content {
 		width: 65%;
 	}
-	#sidebar {
+	#rightbar {
 		width: 30%;
 	}
 }
@@ -104,7 +109,7 @@ RESPONSIVE WIDTH (MEDIA QUERIES)
 		width: auto;
 		float: none;
 	}
-	#sidebar {
+	#rightbar {
 		width: auto;
 		float: none;
 	}
@@ -136,7 +141,7 @@ and (max-device-width : 568px) {
 	#content {
 		width: auto;
 	}
-	#sidebar {
+	#rightbar {
 		clear: both;
 		width: auto;
 	}
@@ -147,7 +152,7 @@ and (max-device-width : 568px) {
 		width: 40px;
 		height: 40px;
 	}
-	#header, #sidebar, #content, #footer {
+	#header, #rightbar, #content, #footer {
 		border-radius: 32px;
 		border-width: 16px;
 	}
