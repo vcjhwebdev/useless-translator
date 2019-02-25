@@ -1,11 +1,11 @@
 <script type="text/javascript">
-  var charCodes=new Array(36); charCodes[". _   "]="a";
-  charCodes["_ . . .   "]="b";
-  charCodes["_ . _ .   "]="c";
-  charCodes["_ . .   "]="d";
-  charCodes[".   "]="e";
-  charCodes[". . _ .   "]="f";
-  charCodes["_ _ .   "]="g";
+  var charCodes=new Array(36); charCodes["._"]="a";
+  charCodes["_..."]="b";
+  charCodes["_._."]="c";
+  charCodes["_.."]="d";
+  charCodes["."]="e";
+  charCodes[".._."]="f";
+  charCodes["_ _ ."]="g";
   charCodes[". . . .   "]="h";
   charCodes[". .   "]="i";
   charCodes[". _ _ _   "]="j";
@@ -17,7 +17,7 @@
   charCodes[". _ _ .   "]="p";
   charCodes["_ _ . _   "]="q";
   charCodes[". _ .   "]="r";
-  charCodes[". . .   "]="s";
+  charCodes["...   "]="s";
   charCodes["_   "]="t";
   charCodes[". . _   "]="u";
   charCodes[". . . _   "]="v";
@@ -42,21 +42,33 @@
     document.morsecode.codebox.value="";
     temp=''
 
-    var chars=document.morsecode.chars.value//.split("");
+
+    var chars=document.morsecode.chars.value.split(" ");
+    var decoded = [];
 
     for (a=0; a<chars.length; a++) {
-      if (chars[a]!=" ") {
-        if (window.charCodes[chars[a]]) {
-          document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
-          //temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
-        }
-        else
-        temp+=chars[a]+"=(None)\n";
+      decoded[a] = []
+      for(var x = 0; x < chars[a].length; x++){
+          if (window.charCodes[chars[a][x]]) {
+            decoded[a].push(charCodes[a][x]])
+            //document.morsecode.codebox.value+=charCodes[chars[a][x]]+"    ";
       }
-      else temp+="\n";
-    }
+      //if (chars[a]!=" ") {
+      //  if (window.charCodes[chars[a]]) {
+        //  document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
+          //temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+
+}
+}
+  return document.morsecode.codebox.value.join(' ');
+        //else{
+        //temp+=chars[a]+"=(None)\n";
+    ////  }
+    //  else { temp+="\n";
+  //  }
     document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
-  }
+
+}
 </script>
 
 <form name="morsecode">
