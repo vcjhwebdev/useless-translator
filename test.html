@@ -41,11 +41,11 @@ function decodeMorse(morseCode) {
   };
 document.morsecode.codebox.value="";
   return morseCode
-    document.morsecode.chars.value.split('   ')
-    document.morsecode.chars.value.map(
+  .split('   ')
+    .map(
       a => a
-        document.morsecode.chars.value.split(' ')
-        document.morsecode.chars.value.map(
+        .split(' ')
+        .map(
           b => ref[b]
         )document.morsecode.chars.value.join('')
     )document.morsecode.chars.value.join(' ');
