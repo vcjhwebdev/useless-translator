@@ -39,18 +39,18 @@ function decodeMorse(morseCode) {
     '----.':  '9',
     '-----':  '0',
   };
-document.morsecode.codebox.value="";
   return morseCode
   .split('   ')
-    .map(
+  .map(
       a => a
-        .split(' ')
-        .map(
+      .split(' ')
+      .map(
           b => ref[b]
-        )document.morsecode.chars.value.join('')
-    )document.morsecode.chars.value.join(' ');
+        ).join('')
+    ).join(' ');
+    document.morsecode.codebox.value += ref[ref[b]];
 }
-return document.morsecode.codebox.value.join(' ');
+
 
 var decoded = decodeMorse(".-- --- .-. -..   .-- --- .-. -..");
 console.log(decoded);
