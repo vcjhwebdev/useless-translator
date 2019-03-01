@@ -84,16 +84,16 @@ charCodesToBin["_"]="01011111";
 var tempToBin=''
 
 function encodeToBin() {
-  document.morsecode.charsToBin.value=document.morsecode.charsToBin.value;
-  document.morsecode.codebox.value="";
+  document.binary.charsToBin.value=document.binary.charsToBin.value;
+  document.binary.codebox.value="";
   tempToBin=''
 
-  var charsToBin=document.morsecode.charsToBin.value.split(" ").join("␣");
+  var charsToBin=document.binary.charsToBin.value.split(" ").join("␣");
 
   for (a=0; a<charsToBin.length; a++) {
     if (charsToBin[a]!=" ") {
       if (window.charCodesToBin[charsToBin[a]]) {
-        document.morsecode.codebox.value+=charCodesToBin[charsToBin[a]]+"    ";
+        document.binary.codebox.value+=charCodesToBin[charsToBin[a]]+"    ";
         tempToBin+=charsToBin[a]+"="+charCodesToBin[charsToBin[a]]+"\n";
       }
       else
@@ -101,5 +101,5 @@ function encodeToBin() {
     }
     else tempToBin+="\n";
   }
-  document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+tempToBin
+  document.binary.codebox.value+="\n\n\Explanation:\n\n"+tempToBin
 }

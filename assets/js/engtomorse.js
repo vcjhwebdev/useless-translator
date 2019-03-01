@@ -56,5 +56,5 @@ function encodeToMorse() {
     }
     else temp+="\n";
   }
-  document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
+  document.morsecode.codebox.value+="\n\n\Explanation:\n\n"+temp
 }
