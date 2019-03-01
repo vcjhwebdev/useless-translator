@@ -56,22 +56,23 @@
          "--··--":","
       };
 
-      function morseToEnglish(inputText) {
-        var message = "."; 
-        var messageConverted = [];
-
-        message.split("   ").map(function (word) {
-            word.split(" ").map(function (letter) {
-                messageConverted.push(alphabet[letter]);
-            });
-            messageConverted.push(" ");
-        });
-
         //console.log(messageConverted.join(""));
       //  function convertLetter(letter) {
         //  console.log(letter);
-        return inputText;
+
+        function morseToEnglish(inputText) {
+          var message = " ";
+          var messageConverted = [];
+
+          message.split("   ").map(function (word) {
+              word.split(" ").map(function (letter) {
+                  messageConverted.push(alphabet[letter]);
+              });
+              messageConverted.push(" ");
+          });
+          return inputText;
         }
+      //  return inputText;
 
         // convert it here
         //var words = inputText.split("     ");
