@@ -1,0 +1,60 @@
+<script type="text/javascript">
+// message = Halp! Morse code is driving me nuts!
+var message = ".... .- .-.. .--. -·-·--     -- --- .-. ... .     -.-. --- -.. .     .. ...     -.. .-. .. ...- .. -. --.     -- .     -. ..- - ... -·-·--";
+var alphabet = {
+   "-----":"0",
+   ".----":"1",
+   "..---":"2",
+   "...--":"3",
+   "....-":"4",
+   ".....":"5",
+   "-....":"6",
+   "--...":"7",
+   "---..":"8",
+   "----.":"9",
+   ".-":"a",
+   "-...":"b",
+   "-.-.":"c",
+   "-..":"d",
+   ".":"e",
+   "..-.":"f",
+   "--.":"g",
+   "....":"h",
+   "..":"i",
+   ".---":"j",
+   "-.-":"k",
+   ".-..":"l",
+   "--":"m",
+   "-.":"n",
+   "---":"o",
+   ".--.":"p",
+   "--.-":"q",
+   ".-.":"r",
+   "...":"s",
+   "-":"t",
+   "..-":"u",
+   "...-":"v",
+   ".--":"w",
+   "-..-":"x",
+   "-.--":"y",
+   "--..":"z",
+   "/":" ",
+   "-·-·--":"!",
+   "·-·-·-":".",
+   "--··--":","
+};
+var messageConverted = [];
+
+message.split("   ").map(function (word) {
+    word.split(" ").map(function (letter) {
+        messageConverted.push(alphabet[letter]);
+    });
+    messageConverted.push(" ");
+});
+
+console.log(messageConverted.join(""));
+</script>
+<form name="morsecode">
+Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Encode" onClick="encode()"><BR><BR>
+<textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
+</form>
