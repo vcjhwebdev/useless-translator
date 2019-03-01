@@ -1,6 +1,7 @@
 <script type="text/javascript">
 // message = Halp! Morse code is driving me nuts!
-var message = ".... .- .-.. .--. -·-·--     -- --- .-. ... .     -.-. --- -.. .     .. ...     -.. .-. .. ...- .. -. --.     -- .     -. ..- - ... -·-·--";
+function encode(){
+var message = ".... .- .-.. .--. -·-·--   -- --- .-. ... .   -.-. --- -.. .   .. ...   -.. .-. .. ...- .. -. --.   -- .   -. ..- - ... -·-·--";
 var alphabet = {
    "-----":"0",
    ".----":"1",
@@ -53,6 +54,9 @@ message.split("   ").map(function (word) {
 });
 
 console.log(messageConverted.join(""));
+  //return document.morsecode.codebox.value.messageConverted.join("");
+  document.morsecode.codebox.value+=messageConverted.join("")
+}
 </script>
 <form name="morsecode">
 Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Encode" onClick="encode()"><BR><BR>
