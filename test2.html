@@ -43,9 +43,12 @@ var alphabet = {
    "·-·-·-":".",
    "--··--":","
 };
-var messageConverted = [];
+function encode() {
+//var messageConverted = [];
+document.morsecode.alphabet.value=document.morsecode.alphabet.value.toLowerCase();
+document.morsecode.codebox.value="";
 
-message.split("   ").map(function (word) {
+document.morsecode.alphabet.value.split("   ").map(function (word) {
     word.split(" ").map(function (letter) {
         messageConverted.push(alphabet[letter]);
     });
@@ -53,8 +56,10 @@ message.split("   ").map(function (word) {
 });
 
 console.log(messageConverted.join(""));
+document.morsecode.codebox.value += messageConverted;
+}
 </script>
 <form name="morsecode">
-Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Encode" onClick="encode()"><BR><BR>
+Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="translate" onClick="encode()"><BR><BR>
 <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
 </form>
