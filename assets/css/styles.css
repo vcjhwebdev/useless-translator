@@ -5,11 +5,11 @@
 }
 
 body {
-  animation: rainbow 5s infinite;
+  animation: rainbow 300s infinite;
 	font-size: 20px;
   background-color:black;
 	/*margin: 30px 30px;*/
-	font-family: "Comic Sans MS", sans-serif;
+	font-family: "Times New Roman", serif;
 	text-align: center;
 }
 
@@ -17,7 +17,7 @@ input {
 	width: 100%;
 	/*background: linear-gradient(to left, #9500ff, #0000ff);*/
 	background-color: #000000;
-	animation: rainbow 5s infinite;
+	animation: rainbow 300s infinite;
 	border: 3px ridge #00FF00;
 }
 
@@ -26,7 +26,7 @@ header {
 }
 
 #title {
-  animation: rainbow 5s infinite;
+  animation: rainbow 300s infinite;
 	font-size: 40px;
 	background: radial-gradient(#00ff00, #0000ff);
   border: 10px ridge #0000ff;
@@ -38,13 +38,13 @@ header {
 
 label{
 	background-color: #000000;
-	animation: rainbow 5s infinite;
+	animation: rainbow 300s infinite;
 	display: block;
 }
 
 textarea {
 	background-color: #000000;
-	animation: rainbow 5s infinite;
+	animation: rainbow 300s infinite;
 	width: 100%;
 }
 
@@ -79,10 +79,16 @@ textarea {
 	margin: 20px auto;
 }
 
+#midright {
+	float: right;
+	width: 20%;
+	margin: 20px auto;
+}
+
 #footer {
 	clear: both;
 }
-#header, #content, #rightbar, #footer, #leftbar {
+#header, #content, #rightbar, #footer, #leftbar, #midright {
 	background-color:rgba(0,0,0,0.5);
 	/*margin-bottom: 4px;*/
 	border: double #00ff0055;

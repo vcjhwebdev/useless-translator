@@ -1,122 +1,121 @@
 function morseToEng(){
-var message = document.morsetoeng.chars.value;
+var message = document.me.morsetoeng.value;
 var alphabet = {
-   "-----":"0",
-   ".----":"1",
-   "..---":"2",
-   "...--":"3",
-   "....-":"4",
-   ".....":"5",
-   "-....":"6",
-   "--...":"7",
-   "---..":"8",
-   "----.":"9",
-   ".-":"a",
-   "-...":"b",
-   "-.-.":"c",
-   "-..":"d",
+   "- - - - -":"0",
+   ". - - - -":"1",
+   ". . - - -":"2",
+   ". . . - -":"3",
+   ". . . . -":"4",
+   ". . . . .":"5",
+   "- . . . .":"6",
+   "- - . . .":"7",
+   "- - - . .":"8",
+   "- - - - .":"9",
+   ". -":"a",
+   "- . . .":"b",
+   "- . - .":"c",
+   "- . .":"d",
    ".":"e",
-   "..-.":"f",
-   "--.":"g",
-   "....":"h",
-   "..":"i",
-   ".---":"j",
-   "-.-":"k",
-   ".-..":"l",
-   "--":"m",
-   "-.":"n",
-   "---":"o",
-   ".--.":"p",
-   "--.-":"q",
-   ".-.":"r",
-   "...":"s",
+   ". . - .":"f",
+   "- - .":"g",
+   ". . . .":"h",
+   ". .":"i",
+   ". - - -":"j",
+   "- . -":"k",
+   ". - . .":"l",
+   "- -":"m",
+   "- .":"n",
+   "- - -":"o",
+   ". - - .":"p",
+   "- - . -":"q",
+   ". - .":"r",
+   ". . .":"s",
    "-":"t",
-   "..-":"u",
-   "...-":"v",
-   ".--":"w",
-   "-..-":"x",
-   "-.--":"y",
-   "--..":"z",
+   ". . -":"u",
+   ". . . -":"v",
+   ". - -":"w",
+   "- . . -":"x",
+   "- . - -":"y",
+   "- - . .":"z",
    "/":" ",
-   "-·-·--":"!",
-   "·-·-·-":".",
-   "--··--":","
+   "- · - · - -":"!",
+   "· - · - · -":".",
+   "- - · · - -":","
 };
 var messageConverted = [];
 
-message.split("   ").map(function (word) {
-    word.split(" ").map(function (letter) {
+message.split("       ").map(function (word) {
+    word.split("   ").map(function (letter) {
         messageConverted.push(alphabet[letter]);
     });
     messageConverted.push(" ");
 });
 
-  document.morsetoeng.codeboxME.value="";
+  document.me.codeboxME.value="";
 
 console.log(messageConverted.join(""));
   //return document.morsetoeng.codebox.value.messageConverted.join("");
-  document.morsetoeng.codeboxME.value+=messageConverted.join("")
+  document.me.codeboxME.value+=messageConverted.join("")
 }
 
-var charCodes=new Array(36);
-charCodes["a"]=". _";
-charCodes["b"]="_ . . .";
-charCodes["c"]="_ . _ .";
-charCodes["d"]="_ . .";
+var charCodes=new Array(36); charCodes["a"]=". -";
+charCodes["b"]="- . . .";
+charCodes["c"]="- . - .";
+charCodes["d"]="- . .";
 charCodes["e"]=".";
-charCodes["f"]=". . _ .";
-charCodes["g"]="_ _ .";
+charCodes["f"]=". . - .";
+charCodes["g"]="- - .";
 charCodes["h"]=". . . .";
 charCodes["i"]=". .";
-charCodes["j"]=". _ _ _";
-charCodes["k"]="_ . _";
-charCodes["l"]=". _ . .";
-charCodes["m"]="_ _";
-charCodes["n"]="_ .";
-charCodes["o"]="_ _ _";
-charCodes["p"]=". _ _ .";
-charCodes["q"]="_ _ . _";
-charCodes["r"]=". _ .";
+charCodes["j"]=". - - -";
+charCodes["k"]="- . -";
+charCodes["l"]=". - . .";
+charCodes["m"]="- -";
+charCodes["n"]="- .";
+charCodes["o"]="- - -";
+charCodes["p"]=". - - .";
+charCodes["q"]="- - . -";
+charCodes["r"]=". - .";
 charCodes["s"]=". . .";
-charCodes["t"]="_";
-charCodes["u"]=". . _";
-charCodes["v"]=". . . _";
-charCodes["w"]=". _ _";
-charCodes["x"]="_ . . _";
-charCodes["y"]="_ . _ _";
-charCodes["z"]="_ _ . .";
-charCodes["1"]=". _ _ _ _";
-charCodes["2"]=". . _ _ _";
-charCodes["3"]=". . . _ _";
-charCodes["4"]=". . . . _";
+charCodes["t"]="-";
+charCodes["u"]=". . -";
+charCodes["v"]=". . . -";
+charCodes["w"]=". - -";
+charCodes["x"]="- . . -";
+charCodes["y"]="- . - -";
+charCodes["z"]="- - . .";
+charCodes["1"]=". - - - -";
+charCodes["2"]=". . - - -";
+charCodes["3"]=". . . - -";
+charCodes["4"]=". . . . -";
 charCodes["5"]=". . . . .";
-charCodes["6"]="_ . . . .";
-charCodes["7"]="_ _ . . .";
-charCodes["8"]="_ _ _ . .";
-charCodes["9"]="_ _ _ _ .";
-charCodes["0"]="_ _ _ _ _";
+charCodes["6"]="- . . . .";
+charCodes["7"]="- - . . .";
+charCodes["8"]="- - - . .";
+charCodes["9"]="- - - - .";
+charCodes["0"]="- - - - -";
 charCodes["/"]="/";
 var temp=''
 
 function encodeToMorse() {
-  document.ToMorse.chars.value=document.ToMorse.chars.value.toLowerCase();
-  document.ToMorse.codeboxMorse.value="";
+  document.em.tomorse.value=document.em.tomorse.value.toLowerCase();
+  document.em.codeboxMorse.value="";
   temp=''
 
-  var chars=document.ToMorse.chars.value.split(" ").join("/");
+  var tomorse=document.em.tomorse.value.split(" ").join("/");
 
-  for (a=0; a<chars.length; a++) {
-    if (chars[a]!=" ") {
-      if (window.charCodes[chars[a]]) {
-        document.ToMorse.codeboxMorse.value+=charCodes[chars[a]]+"    ";
-        temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+  for (a=0; a<tomorse.length; a++) {
+    if (tomorse[a]!=" ") {
+      if (window.charCodes[tomorse[a]]) {
+        document.em.codeboxMorse.value+=charCodes[tomorse[a]]+"   ";
+        temp+=tomorse[a]+"="+charCodes[tomorse[a]]+"\n";
       }
       else
-      temp+=chars[a]+"=(None)\n";
+      temp+=tomorse[a]+"=(None)\n";
     }
     else temp+="\n";
   }
-  document.ToMorse.codeboxMorse.value+="\n\n\Explanation:\n\n"+temp
+  document.em.codeboxMorse.value+="\n\n\nEXPLANATION:\n\n"+temp
 }
 
 var charCodesToBin=new Array(80);
