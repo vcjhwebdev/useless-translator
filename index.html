@@ -5,12 +5,12 @@
     <meta name="viewport" content="width:device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/styles.css">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Useless Translator</title>
+    <title>Useless</title>
   </head>
   <body>
     <div id="wrapper">
       <header>
-        <p id="title"> Useless Translator </p>
+        <p id="title"> Useless </p>
         <p> by Nathan, Viraj, and Jonah </p>
       </header>
       <!--<div id="rightbar">
@@ -37,9 +37,23 @@
       </form>
     </div>-->
     </div>
-    <div>
-      <input type="radio" name="test" value="test">
-    </div>
+      <form>
+        <input id="engtomorse" type="radio" name="language" value="engtomorse">
+        <label for="engtomorse">English to Morse</label>
+        <input id="morsetoeng" type="radio" name="language" value="Morse to English">
+        <label for="morsetoeng">Morse to English</label>
+        <input id="engtobin" type="radio" name="language" value="English to Binary">
+        <label for="engtobin">English to Binary</label>
+        <input id="bintoeng" type="radio" name="language" value="Binary to English">
+        <label for="bintoeng">Binary to English</label>
+        <br>
+      </form>
+      <form name="Input">
+      <p>Input</p>
+      <input type="text" name="Input" value="Input">
+      <input type="button" value="Input" onClick="encodeToMorse()"><br><br>
+      <textarea name="Input" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+      </form>
     <script type="text/javascript" src="assets/js/engtomorse.js"></script>
     <script type="text/javascript" src="assets/js/engtobin.js"></script>
   </body>

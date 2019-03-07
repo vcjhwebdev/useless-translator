@@ -12,6 +12,22 @@ body {
 	text-align: center;
 }
 
+form input[type=radio] {
+    display: none;
+}
+
+form input[type=radio]:checked + label {
+  animation: rainbow-background 5s infinite;
+}
+
+form label {
+  display: block;
+  padding: 4px 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+
 input {
 	width: 100%;
 	background-color: #000000;
@@ -117,44 +133,18 @@ textarea {
 	100%{border: 3px double #ff3100;}
 }
 
-@keyframes rainbow-gradient{
-  0%{background: linear-gradient(#ff0000, #ff3100);}
-  10%{background: linear-gradient(#ff6600, #ff005b);}
-	20%{background: linear-gradient(#ffdc00, #ff10fb);}
-  30%{background: linear-gradient(#00ff00, #ff00ff);}
-	40%{background: linear-gradient(#00ffff, #9500ff);}
-  50%{background: linear-gradient(#0000ff, #0000ff);}
-	60%{background: linear-gradient(#9500ff, #00ffff);}
-  70%{background: linear-gradient(#ff00ff, #00ff00);}
-  80%{background: linear-gradient(#ff10fb, #ffdc00);}
-  90%{background: linear-gradient(#ff005b, #ff6600);}
-	100%{background: linear-gradient(#ff3100, #ff0000);}
+@keyframes rainbow-background{
+  100%{background-color: #ff0000;}
+  90%{background-color: #ff6600;}
+	80%{background-color: #ffdc00;}
+  70%{background-color: #00ff00;}
+	60%{background-color: #00ffff;}
+  50%{background-color: #0000ff;}
+	40%{background-color: #9500ff;}
+  30%{background-color: #ff00ff;}
+  20%{background-color: #ff10fb;}
+  10%{background-color: #ff005b;}
+	0%{background-color: #ff3100;}
 }
 
 /* Color Picker: color.adobe.com */
-
-/* =================================
-DEFAULT STYLES (NO MEDIA QUERY)
-Device width:
-    320px -->   <-- 768px
-==================================== */
-
-/* =================================
-Device width:
-    <-- 320px
-==================================== */
-@media (max-width: 320px) {
-	width:100%;
-}
-/* =================================
-Device width:
-    768px -->   <-- 1024px
-==================================== */
-@media (min-width: 768px) {
-}
-/* =================================
-Device width:
-    1024px -->
-==================================== */
-@media (min-width: 1024px) {
-}
