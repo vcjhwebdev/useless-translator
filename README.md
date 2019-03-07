@@ -25,3 +25,8 @@ A mostly useless translator for binary and morse code
 **Version 0.3**
 
 - Added Binary translator and spaces
+
+**Version 0.4**
+
+- Morse To English and English to Morse added to index
+- Corrected spaces between dashes and dots and between letters and words

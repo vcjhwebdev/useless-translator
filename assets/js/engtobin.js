@@ -1,4 +1,4 @@
-var charCodesToBin=new Array(80);
+/*var charCodesToBin=new Array(80);
 charCodesToBin["a"]="01100001";
 charCodesToBin["b"]="01100010";
 charCodesToBin["c"]="01100011";
@@ -103,3 +103,4 @@ function encodeToBin() {
   }
   document.binary.codebox.value+="\n\n\Explanation:\n\n"+tempToBin
 }
+*/

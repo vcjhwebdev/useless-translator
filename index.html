@@ -14,30 +14,46 @@
         <p> by Nathan, Viraj, and Jonah </p>
       </header>
       <div id="rightbar">
-        <h2>To Morse Code</h2>
-        <form name="morsecode">
+        <h2>English to Morse Code</h2>
+        <form name="em">
         <p>Type in a word or phrase: </p>
-        <input type="text" name="ToMorse" value="">
-        <input type="button" value="To Morse Code" onClick="encodeToMorse()"><br><br>
-        <textarea name="codeboxBin" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+        <input type="text" name="tomorse" value="">
+        <input type="button" value="Translate" onClick="encodeToMorse()"><br><br>
+        <textarea name="codeboxMorse" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+        </form>
+        <h2>Morse Code To English</h2>
+        <form name="me">
+        <p>Type in a word or phrase: </p>
+        <input type="text" name="morsetoeng" value="">
+        <input type="button" value="Translate" onClick="morseToEng()"><br><br>
+        <textarea name="codeboxME" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
         </form>
       </div>
       <div id="leftbar">
-        <h2>Binary</h2>
-        <form name="binary">
+        <h2>English To Binary</h2>
+        <form name="eb">
         <p>Type in a word or phrase: </p>
         <input type="text" name="ToBin" value="">
-        <input type="button" value="To Binary" onClick="encodeToBin()"><br><br>
-        <textarea name="codeboxMorse" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
-      </form>
-
-      <form name="morsetoeng">
-      Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="button" value="To English" onClick="morseToEng()"><BR><BR>
-      <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
-      </form>
-      </div>
+        <input type="button" value="Translate" onClick="encodeToBin()"><br><br>
+        <textarea name="codeboxBin" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+        </form>
+        <h2>Binary To English</h2>
+        <form name="be">
+        <p>Type in a word or phrase: </p>
+        <input type="text" name="bintoeng" value="">
+        <input type="button" value="Translate" onClick="binToEng()"><br><br>
+        <textarea name="codeboxBE" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+        </form>
+        </div>
+      <div id="midright">
+        <h1>Morse Code</h1>
+        <p>1 space between each dot and dash<br>
+           3 spaces between each character<br>
+           7 spaces or a slash between words</p>
+        </div>
     </div>
     <script type="text/javascript" src="assets/js/engtomorse.js"></script>
     <script type="text/javascript" src="assets/js/engtobin.js"></script>
+        <script type="text/javascript" src="assets/js/morsetoeng.js"></script>
   </body>
 </html>

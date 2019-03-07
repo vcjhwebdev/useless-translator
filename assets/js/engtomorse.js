@@ -1,4 +1,4 @@
-var charCodes=new Array(36);
+/*var charCodes=new Array(36);
 charCodes["a"]=". _";
 charCodes["b"]="_ . . .";
 charCodes["c"]="_ . _ .";
@@ -58,3 +58,4 @@ function encodeToMorse() {
   }
   document.morsecode.codebox.value+="\n\n\Explanation:\n\n"+temp
 }
+*/
