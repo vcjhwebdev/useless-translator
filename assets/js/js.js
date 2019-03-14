@@ -1,3 +1,13 @@
+function showMEC() { document.getElementById('mec').style.display = 'block'; }
+
+
+
+
+
+
+
+
+
 function morseToEng(){
 var message = document.me.morsetoeng.value;
 var alphabet = {

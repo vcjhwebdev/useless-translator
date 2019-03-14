@@ -1,0 +1,16 @@
+<html>
+    <head>
+      <script type="text/javascript">
+        function show() { document.getElementById('area').style.display = 'block'; }
+        function hide() { document.getElementById('area').style.display = 'none'; }
+      </script>
+    </head>
+    <body>
+      <form name="radios">
+        <input type=radio name="X" value="H" onclick="hide();"/>A
+        <INPUT TYPE=radio name="X" value="L" onclick="show();"/>B
+        <INPUT TYPE=radio name="X" value="LL" onclick="hide();"/>C
+        <textarea id="area" style="display: none;" name="data" rows=10 cols=50></textarea>
+      </form>
+    </body>
+</html>
