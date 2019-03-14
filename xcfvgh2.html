@@ -1,64 +1,21 @@
-<script type="text/javascript">
-// message = Halp! Morse code is driving me nuts!
-function encode(){
-var message = document.morsetoeng.chars.value;
-var alphabet = {
-   "- - - - -":"0",
-   ". - - - -":"1",
-   ". . - - -":"2",
-   ". . . - -":"3",
-   ". . . . -":"4",
-   ". . . . .":"5",
-   "- . . . .":"6",
-   "- - . . .":"7",
-   "- - - . .":"8",
-   "- - - - .":"9",
-   ". -":"a",
-   "- . . .":"b",
-   "- . - .":"c",
-   "- . .":"d",
-   ".":"e",
-   ". . - .":"f",
-   "- - .":"g",
-   ". . . .":"h",
-   ". .":"i",
-   ". - - -":"j",
-   "- . -":"k",
-   ". - . .":"l",
-   "- -":"m",
-   "- .":"n",
-   "- - -":"o",
-   ". - - .":"p",
-   "- - . -":"q",
-   ". - .":"r",
-   ". . .":"s",
-   "-":"t",
-   ". . -":"u",
-   ". . . -":"v",
-   ". - -":"w",
-   "- . . -":"x",
-   "- . - -":"y",
-   "- - . .":"z",
-   "/":" ",
-   "- · - · - -":"!",
-   "· - · - · -":".",
-   "- - · · - -":","
-};
-var messageConverted = [];
+<script type = "text/javascript">
 
-message.split("       ").map(function (word) {
-    word.split("   ").map(function (letter) {
-        messageConverted.push(alphabet[letter]);
-    });
-    messageConverted.push(" ");
-});
+function binaryAgent() {
+//var str = document.binary.value
 
-console.log(messageConverted.join(""));
-  //return document.morsetoeng.codebox.value.messageConverted.join("");
-  document.morsetoeng.codebox.value+=messageConverted.join("")
+var newBin = str.split(" ");
+var binCode = [];
+
+for (i = 0; i < newBin.length; i++) {
+    binCode.push(String.fromCharCode(parseInt(newBin[i], 2)));
+  }
+document.binary.codebox.value += binCode.join('')
 }
-</script>
-<form name="morsetoeng">
-Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Encode" onClick="encode()"><BR><BR>
+binaryAgent('01000001 01110010 01100101 01101110 00100111 01110100');
+
+//translates to "Aren't"
+//</script>
+<form name="binary">
+Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="BUTTON" value="Translate" onClick="binaryAgent()"><BR><BR>
 <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
 </form>
