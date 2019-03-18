@@ -68,46 +68,47 @@ console.log(messageConverted.join(""));
   document.me.codeboxME.value+=messageConverted.join("")
 }
 
-var charCodes=new Array(36); charCodes["a"]=". -";
-charCodes["b"]="- . . .";
-charCodes["c"]="- . - .";
-charCodes["d"]="- . .";
-charCodes["e"]=".";
-charCodes["f"]=". . - .";
-charCodes["g"]="- - .";
-charCodes["h"]=". . . .";
-charCodes["i"]=". .";
-charCodes["j"]=". - - -";
-charCodes["k"]="- . -";
-charCodes["l"]=". - . .";
-charCodes["m"]="- -";
-charCodes["n"]="- .";
-charCodes["o"]="- - -";
-charCodes["p"]=". - - .";
-charCodes["q"]="- - . -";
-charCodes["r"]=". - .";
-charCodes["s"]=". . .";
-charCodes["t"]="-";
-charCodes["u"]=". . -";
-charCodes["v"]=". . . -";
-charCodes["w"]=". - -";
-charCodes["x"]="- . . -";
-charCodes["y"]="- . - -";
-charCodes["z"]="- - . .";
-charCodes["1"]=". - - - -";
-charCodes["2"]=". . - - -";
-charCodes["3"]=". . . - -";
-charCodes["4"]=". . . . -";
-charCodes["5"]=". . . . .";
-charCodes["6"]="- . . . .";
-charCodes["7"]="- - . . .";
-charCodes["8"]="- - - . .";
-charCodes["9"]="- - - - .";
-charCodes["0"]="- - - - -";
-charCodes["/"]="/";
-var temp=''
+
 
 function encodeToMorse() {
+  var charCodes=new Array(36); charCodes["a"]=". -";
+  charCodes["b"]="- . . .";
+  charCodes["c"]="- . - .";
+  charCodes["d"]="- . .";
+  charCodes["e"]=".";
+  charCodes["f"]=". . - .";
+  charCodes["g"]="- - .";
+  charCodes["h"]=". . . .";
+  charCodes["i"]=". .";
+  charCodes["j"]=". - - -";
+  charCodes["k"]="- . -";
+  charCodes["l"]=". - . .";
+  charCodes["m"]="- -";
+  charCodes["n"]="- .";
+  charCodes["o"]="- - -";
+  charCodes["p"]=". - - .";
+  charCodes["q"]="- - . -";
+  charCodes["r"]=". - .";
+  charCodes["s"]=". . .";
+  charCodes["t"]="-";
+  charCodes["u"]=". . -";
+  charCodes["v"]=". . . -";
+  charCodes["w"]=". - -";
+  charCodes["x"]="- . . -";
+  charCodes["y"]="- . - -";
+  charCodes["z"]="- - . .";
+  charCodes["1"]=". - - - -";
+  charCodes["2"]=". . - - -";
+  charCodes["3"]=". . . - -";
+  charCodes["4"]=". . . . -";
+  charCodes["5"]=". . . . .";
+  charCodes["6"]="- . . . .";
+  charCodes["7"]="- - . . .";
+  charCodes["8"]="- - - . .";
+  charCodes["9"]="- - - - .";
+  charCodes["0"]="- - - - -";
+  charCodes["/"]="/";
+  var temp=''
   document.em.tomorse.value=document.em.tomorse.value.toLowerCase();
   document.em.codeboxMorse.value="";
   temp=''
