@@ -37,7 +37,6 @@
       </form>
     </div>-->
     </div>
-      <form>
         <input id="engtomorse" type="radio" name="language" value="engtomorse" onclick="showEMC()">
         <label for="engtomorse">English to Morse</label>
         <input id="morsetoeng" type="radio" name="language" value="Morse to English" onclick="showMEC()">
@@ -50,7 +49,10 @@
       </form>
       <form name="Input">
       <p>Input</p>
-      <input type="text" name="Input" value="Input">
+      <input id="charsme" type="text" name="charsme" value="">
+      <input id="charsem" type="text" name="charsem" value="">
+      <input id="charseb" type="text" name="charseb" value="">
+      <input id="charsbe" type="text" name="charsbe" value="">
       <input id="em" type="button" value="Input" onClick="encodeToMorse()">
         <input id="me" type="button" value="Input" onClick="morseToEng()">
           <input id="be" type="button" value="Input" onClick="binToEng()">
