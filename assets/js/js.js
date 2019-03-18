@@ -6,6 +6,10 @@ document.getElementById('me').style.display = 'block';
 document.getElementById('em').style.display = 'none';
 document.getElementById('be').style.display = 'none';
 document.getElementById('eb').style.display = 'none';
+document.getElementById('charsme').style.display = 'block';
+document.getElementById('charsem').style.display = 'none';
+document.getElementById('charsbe').style.display = 'none';
+document.getElementById('charseb').style.display = 'none';
 }
 function showEMC() { document.getElementById('emc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -15,6 +19,10 @@ document.getElementById('em').style.display = 'block';
 document.getElementById('me').style.display = 'none';
 document.getElementById('be').style.display = 'none';
 document.getElementById('eb').style.display = 'none';
+document.getElementById('charsem').style.display = 'block';
+document.getElementById('charsme').style.display = 'none';
+document.getElementById('charsbe').style.display = 'none';
+document.getElementById('charseb').style.display = 'none';
 }
 function showBEC() { document.getElementById('bec').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -24,6 +32,10 @@ document.getElementById('be').style.display = 'block';
 document.getElementById('em').style.display = 'none';
 document.getElementById('me').style.display = 'none';
 document.getElementById('eb').style.display = 'none';
+document.getElementById('charsbe').style.display = 'block';
+document.getElementById('charsem').style.display = 'none';
+document.getElementById('charsme').style.display = 'none';
+document.getElementById('charseb').style.display = 'none';
 }
 function showEBC() { document.getElementById('ebc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -33,6 +45,10 @@ document.getElementById('eb').style.display = 'block';
 document.getElementById('em').style.display = 'none';
 document.getElementById('be').style.display = 'none';
 document.getElementById('me').style.display = 'none';
+document.getElementById('charseb').style.display = 'block';
+document.getElementById('charsem').style.display = 'none';
+document.getElementById('charsbe').style.display = 'none';
+document.getElementById('charsme').style.display = 'none';
 }
 
 
@@ -143,24 +159,24 @@ charCodes["/"]="/";
 var temp=''
 
 function encodeToMorse() {
-  document.em.tomorse.value=document.em.tomorse.value.toLowerCase();
-  document.em.codeboxMorse.value="";
+  document.Input.charsem.value=document.Input.charsem.value.toLowerCase();
+  document.Input.emc.value="";
   temp=''
 
-  var tomorse=document.em.tomorse.value.split(" ").join("/");
+  var charsem=document.Input.charsem.value.split(" ").join("/");
 
-  for (a=0; a<tomorse.length; a++) {
-    if (tomorse[a]!=" ") {
-      if (window.charCodes[tomorse[a]]) {
-        document.em.codeboxMorse.value+=charCodes[tomorse[a]]+"   ";
-        temp+=tomorse[a]+"="+charCodes[tomorse[a]]+"\n";
+  for (a=0; a<charsem.length; a++) {
+    if (charsem[a]!=" ") {
+      if (window.charCodes[charsem[a]]) {
+        document.Input.emc.value+=charCodes[charsem[a]]+"   ";
+        temp+=charsem[a]+"="+charCodes[charsem[a]]+"\n";
       }
       else
-      temp+=tomorse[a]+"=(None)\n";
+      temp+=charsem[a]+"=(None)\n";
     }
     else temp+="\n";
   }
-  document.em.codeboxMorse.value+="\n\n\nEXPLANATION:\n\n"+temp
+  document.Input.emc.value+="\n\n\nEXPLANATION:\n\n"+temp
 }
 
 var charCodesToBin=new Array(80);
