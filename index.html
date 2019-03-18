@@ -51,8 +51,14 @@
       <form name="Input">
       <p>Input</p>
       <input type="text" name="Input" value="Input">
-      <input type="button" value="Input" onClick="encodeToMorse()"><br><br>
-      <textarea name="Input" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+      <input id="em" type="button" value="Input" onClick="encodeToMorse()">
+        <input id="me" type="button" value="Input" onClick="morseToEng()">
+          <input id="be" type="button" value="Input" onClick="binToEng()">
+            <input id="eb" type="button" value="Input" onClick="engtobin()">
+      <textarea id="mec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="emc" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="bec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="ebc" style="display: none;" name="data" rows=10 cols=50></textarea>
       </form>
     <script type="text/javascript" src="assets/js/js.js"></script>
   </body>

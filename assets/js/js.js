@@ -1,4 +1,39 @@
-function showMEC() { document.getElementById('mec').style.display = 'block'; }
+function showMEC() { document.getElementById('mec').style.display = 'block';
+document.getElementById('emc').style.display = 'none';
+document.getElementById('bec').style.display = 'none';
+document.getElementById('ebc').style.display = 'none';
+document.getElementById('me').style.display = 'block';
+document.getElementById('em').style.display = 'none';
+document.getElementById('be').style.display = 'none';
+document.getElementById('eb').style.display = 'none';
+}
+function showEMC() { document.getElementById('emc').style.display = 'block';
+document.getElementById('mec').style.display = 'none';
+document.getElementById('bec').style.display = 'none';
+document.getElementById('ebc').style.display = 'none';
+document.getElementById('em').style.display = 'block';
+document.getElementById('me').style.display = 'none';
+document.getElementById('be').style.display = 'none';
+document.getElementById('eb').style.display = 'none';
+}
+function showBEC() { document.getElementById('bec').style.display = 'block';
+document.getElementById('mec').style.display = 'none';
+document.getElementById('ebc').style.display = 'none';
+document.getElementById('emc').style.display = 'none';
+document.getElementById('be').style.display = 'block';
+document.getElementById('em').style.display = 'none';
+document.getElementById('me').style.display = 'none';
+document.getElementById('eb').style.display = 'none';
+}
+function showEBC() { document.getElementById('ebc').style.display = 'block';
+document.getElementById('mec').style.display = 'none';
+document.getElementById('bec').style.display = 'none';
+document.getElementById('emc').style.display = 'none';
+document.getElementById('eb').style.display = 'block';
+document.getElementById('em').style.display = 'none';
+document.getElementById('be').style.display = 'none';
+document.getElementById('me').style.display = 'none';
+}
 
 
 
@@ -234,7 +269,7 @@ function encodeToBin() {
   }
   document.ToBin.codeboxBin.value+="\n\n\Explanation:\n\n"+tempToBin
 }
-function binaryAgent(str) {
+function binToEng(str) {
 
 var newBin = str.split(" ");
 var binCode = [];
