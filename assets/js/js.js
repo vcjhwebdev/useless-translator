@@ -60,7 +60,7 @@ document.getElementById('charsme').style.display = 'none';
 
 
 function morseToEng(){
-var message = document.me.morsetoeng.value;
+var message = document.Input.charsme.value;
 var alphabet = {
    "- - - - -":"0",
    ". - - - -":"1",
@@ -112,11 +112,11 @@ message.split("       ").map(function (word) {
     messageConverted.push(" ");
 });
 
-  document.me.codeboxME.value="";
+  document.Input.mec.value="";
 
 console.log(messageConverted.join(""));
   //return document.morsetoeng.codebox.value.messageConverted.join("");
-  document.me.codeboxME.value+=messageConverted.join("")
+  document.Input.mec.value+=messageConverted.join("")
 }
 
 var charCodes=new Array(36); charCodes["a"]=". -";
