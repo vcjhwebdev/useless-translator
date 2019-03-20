@@ -1,4 +1,5 @@
-function showMEC() { document.getElementById('mec').style.display = 'block';
+function showMEC() {
+document.getElementById('mec').style.display = 'block';
 document.getElementById('emc').style.display = 'none';
 document.getElementById('bec').style.display = 'none';
 document.getElementById('ebc').style.display = 'none';
@@ -10,8 +11,13 @@ document.getElementById('charsme').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
+document.getElementById('pme').style.display = 'block';
+document.getElementById('pem').style.display = 'none';
+document.getElementById('pbe').style.display = 'none';
+document.getElementById('peb').style.display = 'none';
 }
-function showEMC() { document.getElementById('emc').style.display = 'block';
+function showEMC() {
+document.getElementById('emc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
 document.getElementById('bec').style.display = 'none';
 document.getElementById('ebc').style.display = 'none';
@@ -23,8 +29,13 @@ document.getElementById('charsem').style.display = 'block';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
+document.getElementById('pem').style.display = 'block';
+document.getElementById('pme').style.display = 'none';
+document.getElementById('pbe').style.display = 'none';
+document.getElementById('peb').style.display = 'none';
 }
-function showBEC() { document.getElementById('bec').style.display = 'block';
+function showBEC() {
+document.getElementById('bec').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
 document.getElementById('ebc').style.display = 'none';
 document.getElementById('emc').style.display = 'none';
@@ -36,8 +47,13 @@ document.getElementById('charsbe').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
+document.getElementById('pbe').style.display = 'block';
+document.getElementById('pem').style.display = 'none';
+document.getElementById('pme').style.display = 'none';
+document.getElementById('peb').style.display = 'none';
 }
-function showEBC() { document.getElementById('ebc').style.display = 'block';
+function showEBC() {
+document.getElementById('ebc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
 document.getElementById('bec').style.display = 'none';
 document.getElementById('emc').style.display = 'none';
@@ -49,6 +65,10 @@ document.getElementById('charseb').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
+document.getElementById('peb').style.display = 'block';
+document.getElementById('pem').style.display = 'none';
+document.getElementById('pbe').style.display = 'none';
+document.getElementById('pme').style.display = 'none';
 }
 
 
@@ -264,17 +284,17 @@ charCodesToBin["_"]="01011111";
 
 var tempToBin=''
 
-function encodeToBin() {
-  document.ToBin.charsToBin.value=document.ToBin.charsToBin.value;
-  document.ToBin.codeboxBin.value="";
+function engtobin() {
+  document.Input.charseb.value=document.Input.charseb.value;
+  document.Input.ebc.value="";
   tempToBin=''
 
-  var charsToBin=document.ToBin.charsToBin.value.split(" ").join("␣");
+  var charsToBin=document.Input.charseb.value.split(" ").join("␣");
 
   for (a=0; a<charsToBin.length; a++) {
     if (charsToBin[a]!=" ") {
       if (window.charCodesToBin[charsToBin[a]]) {
-        document.ToBin.codeboxBin.value+=charCodesToBin[charsToBin[a]]+"    ";
+        document.Input.ebc.value+=charCodesToBin[charsToBin[a]]+"    ";
         tempToBin+=charsToBin[a]+"="+charCodesToBin[charsToBin[a]]+"\n";
       }
       else
@@ -282,21 +302,15 @@ function encodeToBin() {
     }
     else tempToBin+="\n";
   }
-  document.ToBin.codeboxBin.value+="\n\n\Explanation:\n\n"+tempToBin
+  document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
-function binToEng() {
-  var str = document.getElementById("str").value;
+function binToEng(str) {
+
 var newBin = str.split(" ");
 var binCode = [];
 
 for (i = 0; i < newBin.length; i++) {
     binCode.push(String.fromCharCode(parseInt(newBin[i], 2)));
   }
-document.getElementById("output").value = binCode.join("");
-
-
-//<html>
-//<textarea autofocus class="str" id="str" onKeyUp="binToEng()"></textarea>
-//<textarea class="output" id="output" readonly> </textarea>
-//</html>
+return binCode.join("");
 }
