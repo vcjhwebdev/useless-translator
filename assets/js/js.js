@@ -294,6 +294,5 @@ for (i = 0; i < newBin.length; i++) {
   }
 document.getElementById("output").value = binCode.join("");
 }
-<html>
-<textarea autofocus class="str" id="str" onKeyUp="binToEng()"></textarea>
-<textarea class="output" id="output" readonly> </textarea>
+//<html>
+//<textarea class="output" id="output" readonly> </textarea>
