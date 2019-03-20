@@ -293,6 +293,10 @@ for (i = 0; i < newBin.length; i++) {
     binCode.push(String.fromCharCode(parseInt(newBin[i], 2)));
   }
 document.getElementById("output").value = binCode.join("");
-}
+
+
 //<html>
+//<textarea autofocus class="str" id="str" onKeyUp="binToEng()"></textarea>
 //<textarea class="output" id="output" readonly> </textarea>
+//</html>
+}
