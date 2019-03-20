@@ -304,13 +304,13 @@ function engtobin() {
   }
   document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
-function binToEng(str) {
-
+function binToEng() {
+  var str = document.Input.charsbe.value;
 var newBin = str.split(" ");
 var binCode = [];
 
 for (i = 0; i < newBin.length; i++) {
     binCode.push(String.fromCharCode(parseInt(newBin[i], 2)));
   }
-return binCode.join("");
+document.Input.bec.value += binCode.join("");
 }
