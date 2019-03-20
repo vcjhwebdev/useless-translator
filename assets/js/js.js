@@ -218,7 +218,7 @@ charCodesToBin["o"]="01101111";
 charCodesToBin["p"]="01110000";
 charCodesToBin["q"]="01110001";
 charCodesToBin["r"]="01110010";
-charCodesToBin["s"]="01110100";
+charCodesToBin["s"]="01110011";
 charCodesToBin["t"]="01110100";
 charCodesToBin["u"]="01110101";
 charCodesToBin["v"]="01110110";
@@ -305,6 +305,7 @@ function engtobin() {
   document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
 function binToEng() {
+    document.Input.bec.value="";
   var str = document.Input.charsbe.value;
 var newBin = str.split(" ");
 var binCode = [];
