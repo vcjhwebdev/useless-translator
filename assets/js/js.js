@@ -264,17 +264,17 @@ charCodesToBin["_"]="01011111";
 
 var tempToBin=''
 
-function engtobin() {
-  document.Input.charseb.value=document.Input.charseb.value;
-  document.Input.ebc.value="";
+function encodeToBin() {
+  document.ToBin.charsToBin.value=document.ToBin.charsToBin.value;
+  document.ToBin.codeboxBin.value="";
   tempToBin=''
 
-  var charsToBin=document.Input.charseb.value.split(" ").join("␣");
+  var charsToBin=document.ToBin.charsToBin.value.split(" ").join("␣");
 
   for (a=0; a<charsToBin.length; a++) {
     if (charsToBin[a]!=" ") {
       if (window.charCodesToBin[charsToBin[a]]) {
-        document.Input.ebc.value+=charCodesToBin[charsToBin[a]]+"    ";
+        document.ToBin.codeboxBin.value+=charCodesToBin[charsToBin[a]]+"    ";
         tempToBin+=charsToBin[a]+"="+charCodesToBin[charsToBin[a]]+"\n";
       }
       else
@@ -282,7 +282,7 @@ function engtobin() {
     }
     else tempToBin+="\n";
   }
-  document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
+  document.ToBin.codeboxBin.value+="\n\n\Explanation:\n\n"+tempToBin
 }
 function binToEng() {
   var str = document.getElementById("str").value;
