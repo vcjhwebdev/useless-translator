@@ -26,6 +26,9 @@ form label {
   border: 1px solid black;
   border-radius: 4px;
 }
+html {
+animation: rainbow-text-solid 5s infinite;
+}
 
 
 input {
@@ -33,7 +36,9 @@ input {
 	background-color: #000000;
 	animation: rainbow-text-solid 5s infinite;
 }
-
+#eb {
+animation: rainbow-text-solid 5s infinite;	 
+}
 header {
 	text-align: center;
 }

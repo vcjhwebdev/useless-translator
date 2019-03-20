@@ -1,81 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
+<script type="text/javascript">
 
-<p>What translate would you like?</p>
+function binToEng() {
+  var str = document.getElementById("str").value;
+var newBin = str.split(" ");
+var binCode = [];
 
-<form>
-  <input id="english to morse" type="radio" name="english to morse" value="translate">english to morse<br>
-  <input id="morse to english" type="radio" name="morse to english" value="translate">morse to english<br>
-  <br>
-  <input id= "english to morse" type="button" onclick="myFunction()" value="Send order">
-  <input id="morse to english" type="button" onclick="bob()" value="Send!">
-  <br><br>
-  <input type="text" id="order" size="50">
-  <input type="submit" value="Submit">
-</form>
-
-<script>
-function myFunction() {
-  // message = Halp! Morse code is driving me nuts!
-  var message = ".... .- .-.. .--. -·-·--     -- --- .-. ... .     -.-. --- -.. .     .. ...     -.. .-. .. ...- .. -. --.     -- .     -. ..- - ... -·-·--";
-  var alphabet = {
-     "-----":"0",
-     ".----":"1",
-     "..---":"2",
-     "...--":"3",
-     "....-":"4",
-     ".....":"5",
-     "-....":"6",
-     "--...":"7",
-     "---..":"8",
-     "----.":"9",
-     ".-":"a",
-     "-...":"b",
-     "-.-.":"c",
-     "-..":"d",
-     ".":"e",
-     "..-.":"f",
-     "--.":"g",
-     "....":"h",
-     "..":"i",
-     ".---":"j",
-     "-.-":"k",
-     ".-..":"l",
-     "--":"m",
-     "-.":"n",
-     "---":"o",
-     ".--.":"p",
-     "--.-":"q",
-     ".-.":"r",
-     "...":"s",
-     "-":"t",
-     "..-":"u",
-     "...-":"v",
-     ".--":"w",
-     "-..-":"x",
-     "-.--":"y",
-     "--..":"z",
-     "/":" ",
-     "-·-·--":"!",
-     "·-·-·-":".",
-     "--··--":","
-  };
-  var messageConverted = [];
-
-  message.split("   ").map(function (word) {
-      word.split(" ").map(function (letter) {
-          messageConverted.push(alphabet[letter]);
-      });
-      messageConverted.push(" ");
-  });
-
-  document.write(messageConverted.join(""));
-}
-function bob() {
-  document.write("hi!")
+for (i = 0; i < newBin.length; i++) {
+    binCode.push(String.fromCharCode(parseInt(newBin[i], 2)));
+  }
+document.getElementById("output").value = binCode.join("");
 }
 </script>
-
-</body>
-</html>
+<html>
+<textarea autofocus class="str" id="str" onKeyUp="binToEng()"></textarea>
+<textarea class="output" id="output" readonly> </textarea>
