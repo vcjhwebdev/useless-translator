@@ -37,7 +37,7 @@ input {
 	animation: rainbow-text-solid 5s infinite;
 }
 #eb {
-animation: rainbow-text-solid 5s infinite;	 
+animation: rainbow-text-solid 5s infinite;
 }
 header {
 	text-align: center;
@@ -165,5 +165,9 @@ textarea {
   10%{background-color: #ff005b;}
 	0%{background-color: #ff3100;}
 }
+#engtomorse, #morsetoeng, #bintoeng, #engtobin {
+	display: none;
+}
+
 
 /* Color Picker: color.adobe.com */
