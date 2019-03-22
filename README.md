@@ -4,9 +4,9 @@ A mostly useless translator for binary and morse code
 
 ## SUSGANG
 
-- [Peyton Quang](http://#susboy.github.io)
-- [Jonah Ivanov](http://link-to-website-here/)
-- [Viral Ghost](http://swiftninja99.github.io)
+- [Nathan Weng](https://deadseye40.github.io/)
+- [Jonah Wu](http://link-to-website-here/)
+- [Viral Ghose](http://swiftninja99.github.io)
 
 ## Features
 
@@ -30,3 +30,7 @@ A mostly useless translator for binary and morse code
 
 - Morse To English and English to Morse added to index
 - Corrected spaces between dashes and dots and between letters and words
+
+**Version 0.5**
+
+-
