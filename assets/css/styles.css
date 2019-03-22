@@ -168,6 +168,10 @@ textarea {
 #engtomorse, #morsetoeng, #bintoeng, #engtobin {
 	display: none;
 }
-
+body {
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
 
 /* Color Picker: color.adobe.com */
