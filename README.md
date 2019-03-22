@@ -33,4 +33,13 @@ A mostly useless translator for binary and morse code
 
 **Version 0.5**
 
--
+- Binary to English and English to Binary added to index
+- Corrected CSS styles
+
+**Version 0.6**
+
+- Added Radio Buttons
+
+**Version 0.7**
+
+- Changed ReadMe
