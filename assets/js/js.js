@@ -305,6 +305,7 @@ function engtobin() {
   document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
 function binToEng() {
+  document.Input.bec.value="";
   var str = document.Input.charsbe.value;
 var newBin = str.split(" ");
 var binCode = [];
