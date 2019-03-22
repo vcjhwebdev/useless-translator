@@ -5,7 +5,7 @@ A mostly useless translator for binary and morse code
 ## SUSGANG
 
 - [Nathan Weng](https://deadseye40.github.io/)
-- [Jonah Wu](http://link-to-website-here/)
+- [Jonah Wu](https://chaikachicken-153.github.io/)
 - [Viral Ghose](http://swiftninja99.github.io)
 
 ## Features
