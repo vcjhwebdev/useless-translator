@@ -2,34 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Web App Title</title>
-  </head>
-  <body>
-    <form>
-      <label for="english">English</label>
-      <textarea id="english"></textarea>
-      <label for="binary">Binary</label>
-      <textarea id="binary"></textarea>
-    </form>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Useless</title>
+    <!--WEB APP-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"/>
+<!--iOS-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Useless Translator">
 
-<a class="button-a"> Binary Translator </a>
-<p> by Nathan, Viraj, and Jonah </p>
-<a class="button-b"> Morse Code Translator </a>
+<!--icons-->
+<link rel="apple-touch-icon" href="touch-icons/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icons/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="180x180" href="touch-icons/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="167x167" href="touch-icons/touch-icon-ipad-retina.png">
 
-    <!-- JavaScript File (loaded after the html has rendered) -->
-    <script src="assets/js/app.js"></script>
+<!--Splash Screens-->
+<link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+<link rel="manifest" href="manifest.json">
+
   </head>
-    <body>
-  <a class="buttona"> Binary Translator </a>
-  <p> by Nathan, Viraj, and Jonah </p>
-  <a class="buttonb"> Morse Code Translator </a>
-  <form id="sidebar" style="width:100%;">
-    <label for="english" class="englishl" style="display:block">English</label>
-    <textarea class="englisht"></textarea>
-    <br>
-    <label for="binary" class="binaryl">Binary</label>
-    <textarea class="binaryt"></textarea>
-  </form>
+  <body onload="showEMC()">
+    <div id="wrapper">
+      <header>
+        <p id="title"> Useless Translator</p>
+        <p> by Nathan, Viraj, and Jonah </p>
+      </header>
+      <!--<div id="rightbar">
+        <h2>To Morse Code</h2>
+        <form name="morsecode">
+        <p>Type in a word or phrase: </p>
+        <input type="text" name="ToMorse" value="">
+        <input type="button" value="To Morse Code" onClick="encodeToMorse()"><br><br>
+        <textarea name="codeboxBin" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+        </form>
+      </div>
+      <div id="leftbar">
+        <h2>Binary</h2>
+        <form name="binary">
+        <p>Type in a word or phrase: </p>
+        <input type="text" name="ToBin" value="">
+        <input type="button" value="To Binary" onClick="encodeToBin()"><br><br>
+        <textarea name="codeboxMorse" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
+      </form>
+
+      <form name="morsetoeng">
+      Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="button" value="To English" onClick="morseToEng()"><BR><BR>
+      <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
+      </form>
+    </div>-->
+    </div>
+        <input id="engtomorse" type="radio" name="language" value="engtomorse" onclick="showEMC()">
+        <label for="engtomorse">English to Morse</label>
+        <input id="morsetoeng" type="radio" name="language" value="Morse to English" onclick="showMEC()">
+        <label for="morsetoeng">Morse to English</label>
+        <input id="engtobin" type="radio" name="language" value="English to Binary" onclick="showEBC()">
+        <label for="engtobin">English to Binary</label>
+        <input id="bintoeng" type="radio" name="language" value="Binary to English" onclick="showBEC()">
+        <label for="bintoeng">Binary to English</label>
+        <br>
+      </form>
+      <form name="Input">
+      <p id="pem">English To Morse</p>
+      <p id="pme">Morse To English</p>
+      <p id="peb">English To Binary</p>
+      <p id="pbe">Binary To English</p>
+      <input id="charsme" type="text" name="charsme" value="">
+      <input id="charsem" type="text" name="charsem" value="">
+      <input id="charseb" type="text" name="charseb" value="">
+      <input id="charsbe" type="text" name="charsbe" value="">
+      <input id="em" type="button" value="Translate" onClick="encodeToMorse()">
+      <input id="me" type="button" value="Translate" onClick="morseToEng()">
+      <input id="be" type="button" value="Translate" onClick="binToEng()">
+      <input id="eb" type="button" value="Translate" onClick="engtobin()">
+      <textarea id="mec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="emc" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="bec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea id="ebc" style="display: none;" name="data" rows=10 cols=50></textarea>
+      </form>
+    <script type="text/javascript" src="assets/js/js.js"></script>
+    <script>
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+  		navigator.serviceWorker.register('sw.js').then(function(registration) {
+  		// Registration was successful
+  		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  	}, function(err) {
+  		// registration failed :(
+  		console.log('ServiceWorker registration failed: ', err);
+  	});
+  });
+}
+</script>
   </body>
 </html>
