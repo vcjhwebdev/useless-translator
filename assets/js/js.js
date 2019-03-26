@@ -11,10 +11,6 @@ document.getElementById('charsme').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
-document.getElementById('pme').style.display = 'block';
-document.getElementById('pem').style.display = 'none';
-document.getElementById('pbe').style.display = 'none';
-document.getElementById('peb').style.display = 'none';
 }
 function showEMC() {
 document.getElementById('emc').style.display = 'block';
@@ -29,10 +25,6 @@ document.getElementById('charsem').style.display = 'block';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
-document.getElementById('pem').style.display = 'block';
-document.getElementById('pme').style.display = 'none';
-document.getElementById('pbe').style.display = 'none';
-document.getElementById('peb').style.display = 'none';
 }
 function showBEC() {
 document.getElementById('bec').style.display = 'block';
@@ -47,10 +39,6 @@ document.getElementById('charsbe').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
-document.getElementById('pbe').style.display = 'block';
-document.getElementById('pem').style.display = 'none';
-document.getElementById('pme').style.display = 'none';
-document.getElementById('peb').style.display = 'none';
 }
 function showEBC() {
 document.getElementById('ebc').style.display = 'block';
@@ -65,19 +53,7 @@ document.getElementById('charseb').style.display = 'block';
 document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
-document.getElementById('peb').style.display = 'block';
-document.getElementById('pem').style.display = 'none';
-document.getElementById('pbe').style.display = 'none';
-document.getElementById('pme').style.display = 'none';
 }
-
-
-
-
-
-
-
-
 
 function morseToEng(){
 var message = document.Input.charsme.value;
