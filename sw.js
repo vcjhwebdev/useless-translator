@@ -1,9 +1,9 @@
-const CACHE_NAME = 'v0.1';
+const CACHE_NAME = 'v1.0';
 
 var urlsToCache = [
 	'index.html',
-	'assets/css/style.css',
-	'assets/js/calculator.js'
+	'assets/css/styles.css',
+	'assets/js/js.js'
 ];
 
 self.addEventListener('install', function(event) {
