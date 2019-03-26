@@ -3,40 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width:device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/styles.css">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Useless</title>
     <!--WEB APP-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000000"/>
-<!--iOS-->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Useless Translator">
+    <meta name="Description" content="desc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    <!--iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta id="status-bar-meta" name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Useless Translator">
 
-<!--icons-->
-<link rel="apple-touch-icon" href="touch-icons/touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="152x152" href="touch-icons/touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="180x180" href="touch-icons/touch-icon-iphone-retina.png">
-<link rel="apple-touch-icon" sizes="167x167" href="touch-icons/touch-icon-ipad-retina.png">
+    <!--icons-->
+    <link rel="apple-touch-icon" href="touch-icons/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icons/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icons/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icons/touch-icon-ipad-retina.png">
 
-<!--Splash Screens-->
-<link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <!--Splash Screens-->
+    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
-<link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
   </head>
   <body onload="showEMC()">
     <div id="wrapper">
       <header>
         <p id="title"> Useless Translator</p>
-        <p> by Nathan, Viraj, and Jonah </p>
+        <p> by Nathan, Jonah, and Viraj</p>
       </header>
       <!--<div id="rightbar">
         <h2>To Morse Code</h2>
@@ -85,24 +87,24 @@
       <input id="me" type="button" value="Translate" onClick="morseToEng()">
       <input id="be" type="button" value="Translate" onClick="binToEng()">
       <input id="eb" type="button" value="Translate" onClick="engtobin()">
-      <textarea id="mec" style="display: none;" name="data" rows=10 cols=50></textarea>
-      <textarea id="emc" style="display: none;" name="data" rows=10 cols=50></textarea>
-      <textarea id="bec" style="display: none;" name="data" rows=10 cols=50></textarea>
-      <textarea id="ebc" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea readonly id="mec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea readonly id="emc" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea readonly id="bec" style="display: none;" name="data" rows=10 cols=50></textarea>
+      <textarea readonly id="ebc" style="display: none;" name="data" rows=10 cols=50></textarea>
       </form>
     <script type="text/javascript" src="assets/js/js.js"></script>
     <script>
-if ('serviceWorker' in navigator) {
-	window.addEventListener('load', function() {
-  		navigator.serviceWorker.register('sw.js').then(function(registration) {
-  		// Registration was successful
-  		console.log('ServiceWorker registration successful with scope: ', registration.scope);
-  	}, function(err) {
-  		// registration failed :(
-  		console.log('ServiceWorker registration failed: ', err);
-  	});
-  });
-}
-</script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+    });
+    }
+    </script>
   </body>
 </html>
