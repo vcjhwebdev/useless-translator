@@ -10,6 +10,7 @@ body {
   background-color: black;
   font-family: "Comic Sans MS", sans-serif;
 	text-align: center;
+	border-collapse: collapse;
 }
 
 input[type=radio] {
@@ -34,11 +35,13 @@ html {
 	height: 30px;
 	font-size: 20px;
 	text-align: center;
+	border: 2px ridge #00ffff;
 }
 
 #em, #me, #be, #eb {
 	height: 25px;
 	font-size: 20px;
+	border: 2px ridge #00ffff;
 }
 
 input {
