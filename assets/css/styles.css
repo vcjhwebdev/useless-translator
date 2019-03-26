@@ -183,5 +183,8 @@ body {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
+textarea {
+	resize: none;
+}
 
 /* Color Picker: color.adobe.com */
