@@ -33,6 +33,7 @@ animation: rainbow-text-solid 5s infinite;
 
 input {
 	width: 100%;
+	height: 10%;
 	background-color: #000000;
 	animation: rainbow-text-solid 5s infinite;
 }
