@@ -12,12 +12,12 @@ body {
 	text-align: center;
 }
 
-form input[type=radio] {
-    display: none;
+input[type=radio] {
+  display: none;
 }
 
-form input[type=radio]:checked + label {
-  animation: rainbow-border 2s infinite;
+input[type=radio]:checked + label {
+  border: 2px solid lime;
 }
 
 form label {
