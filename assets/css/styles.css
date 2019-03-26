@@ -27,13 +27,22 @@ form label {
   border-radius: 4px;
 }
 html {
-animation: rainbow-text-solid 5s infinite;
+	animation: rainbow-text-solid 5s infinite;
 }
 
+#charsem, #charsme, #charsbe, #charseb {
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#em, #me, #be, #eb {
+	height: 25px;
+	font-size: 20px;
+}
 
 input {
 	width: 100%;
-	height: 10%;
 	background-color: #000000;
 	animation: rainbow-text-solid 5s infinite;
 }
