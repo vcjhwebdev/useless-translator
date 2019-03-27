@@ -10,14 +10,15 @@ body {
   background-color: black;
   font-family: "Comic Sans MS", sans-serif;
 	text-align: center;
+	border-collapse: collapse;
 }
 
-form input[type=radio] {
-    display: none;
+input[type=radio] {
+  display: none;
 }
 
-form input[type=radio]:checked + label {
-  animation: rainbow-border 2s infinite;
+input[type=radio]:checked + label {
+  border: 2px solid lime;
 }
 
 form label {
@@ -34,11 +35,13 @@ html {
 	height: 30px;
 	font-size: 20px;
 	text-align: center;
+	border: 2px ridge #00ffff;
 }
 
 #em, #me, #be, #eb {
 	height: 25px;
 	font-size: 20px;
+	border: 2px ridge #00ffff;
 }
 
 input {
@@ -182,6 +185,9 @@ body {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+}
+textarea {
+	resize: none;
 }
 
 /* Color Picker: color.adobe.com */
