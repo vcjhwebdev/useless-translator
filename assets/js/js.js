@@ -1,3 +1,5 @@
+var settingsForm = document.getElementById("settings");
+
 function showMEC() {
 document.getElementById('mec').style.display = 'block';
 document.getElementById('emc').style.display = 'none';
@@ -110,7 +112,7 @@ message.split("       ").map(function (word) {
 
   document.Input.mec.value="";
 
-console.log(messageConverted.join(""));
+//console.log(messageConverted.join(""));
   //return document.morsetoeng.codebox.value.messageConverted.join("");
   document.Input.mec.value+=messageConverted.join("")
 }
@@ -291,3 +293,16 @@ for (i = 0; i < newBin.length; i++) {
   }
 document.Input.bec.value += binCode.join("");
 }
+
+settingsForm.addEventListener("click", function(e) {
+  var target = e.target.id;
+  if(target == "engtobin") {
+    showEBC();
+  } else if(target === "bintoeng") {
+    showBEC();
+  } else if(target === "morsetoeng") {
+    showMEC();
+  } else if(target === "engtomorse") {
+    showEMC();
+  }
+});
