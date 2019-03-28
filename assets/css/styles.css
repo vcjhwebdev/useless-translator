@@ -17,12 +17,16 @@ input[type=radio]:checked + label {
   border: 2px solid #00ffff;
 }
 
+input[type=radio] + label {
+  border: 2px solid #000000;
+}
+
 /* input[type=text] {
-	transition: 1s;
+	transition: 10s;
 }
 
 input[type=text]:focus {
-	background-color: red;
+	background-color: #ff0000;
 } */
 
 form label {
@@ -50,6 +54,7 @@ html {
 
 #mec, #emc, #bec, #ebc {
 	font-size: 20px;
+	color: #00ffff;
 }
 
 input {
@@ -79,7 +84,7 @@ label {
 
 textarea {
 	background-color: #000000;
-	animation: rainbow-text-solid 5s infinite;
+	color: #00ffff;
 	width: 100%;
 }
 
