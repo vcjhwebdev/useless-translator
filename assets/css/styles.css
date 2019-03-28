@@ -5,7 +5,7 @@
 }
 
 body {
-  animation: rainbow-text-solid 0.1s infinite;
+  animation: rainbow-text-solid 0.1s infinite, rainbow-background 0.2s infinite;
 	font-size: 20px;
   background-color: black;
   font-family: "Comic Sans MS", sans-serif;
