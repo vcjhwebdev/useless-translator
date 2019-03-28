@@ -13,13 +13,17 @@ body {
 	border-collapse: collapse;
 }
 
-input[type=radio] {
-  display: none;
-}
-
 input[type=radio]:checked + label {
   border: 2px solid #00ffff;
 }
+
+/* input[type=text] {
+	transition: 1s;
+}
+
+input[type=text]:focus {
+	background-color: red;
+} */
 
 form label {
   display: block;
