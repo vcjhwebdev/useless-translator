@@ -14,6 +14,7 @@ document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showEMC() {
 document.getElementById('emc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -28,6 +29,7 @@ document.getElementById('charsme').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showBEC() {
 document.getElementById('bec').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -42,6 +44,7 @@ document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showEBC() {
 document.getElementById('ebc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
