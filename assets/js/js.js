@@ -304,3 +304,35 @@ settingsForm.addEventListener("click", function(e) {
     showEMC();
   }
 });
+
+var CHARSMEE = document.getElementById("charsme");
+CHARSMEE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("me").click();
+  }
+});
+
+var CHARSEME = document.getElementById("charsem");
+CHARSEME.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("em").click();
+  }
+});
+
+var CHARSBEE = document.getElementById("charsbe");
+CHARSBEE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("be").click();
+  }
+});
+
+var CHARSEBE = document.getElementById("charseb");
+CHARSEBE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("eb").click();
+  }
+});

@@ -47,3 +47,7 @@ A mostly useless translator for binary and morse code
 **Version 1.0**
 
 - Minor CSS changes and release
+
+**Version 1.1**
+
+- Keyboard support
