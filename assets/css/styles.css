@@ -21,14 +21,6 @@ input[type=radio] + label {
   border: 2px solid #000000;
 }
 
-/* input[type=text] {
-	transition: 10s;
-}
-
-input[type=text]:focus {
-	background-color: #ff0000;
-} */
-
 form label {
   display: block;
   padding: 4px 8px;
