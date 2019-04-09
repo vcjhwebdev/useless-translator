@@ -2,7 +2,7 @@ Morse Code and Binary Translator
 
 A mostly useless translator for binary and morse code
 
-## SUSGANG
+## Creators
 
 - [Nathan Weng](https://deadseye40.github.io/)
 - [Jonah Wu](https://chaikachicken-153.github.io/)
@@ -51,3 +51,4 @@ A mostly useless translator for binary and morse code
 **Version 1.1**
 
 - Keyboard support
+- Release
