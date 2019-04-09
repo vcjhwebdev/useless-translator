@@ -5,7 +5,7 @@
 }
 
 body {
-  animation: rainbow-text-solid 5s infinite;
+  animation: rainbow-text-solid 5s infinite/*, rainbow-background 0.2s infinite*/;
 	font-size: 20px;
   background-color: black;
   font-family: "Comic Sans MS", sans-serif;
@@ -13,12 +13,12 @@ body {
 	border-collapse: collapse;
 }
 
-input[type=radio] {
-  display: none;
+input[type=radio]:checked + label {
+  border: 2px solid #00ffff;
 }
 
-input[type=radio]:checked + label {
-  border: 2px solid lime;
+input[type=radio] + label {
+  border: 2px solid #000000;
 }
 
 form label {
@@ -44,14 +44,17 @@ html {
 	border: 2px ridge #00ffff;
 }
 
+#mec, #emc, #bec, #ebc {
+	font-size: 20px;
+	color: #00ffff;
+}
+
 input {
 	width: 100%;
 	background-color: #000000;
-	animation: rainbow-text-solid 5s infinite;
+	color: #00ffff;
 }
-#eb {
-animation: rainbow-text-solid 5s infinite;
-}
+
 header {
 	text-align: center;
 }
@@ -73,7 +76,7 @@ label {
 
 textarea {
 	background-color: #000000;
-	animation: rainbow-text-solid 5s infinite;
+	color: #00ffff;
 	width: 100%;
 }
 

@@ -31,40 +31,17 @@
   <body onload="showEMC()">
     <div id="wrapper">
       <header>
-        <p id="title"> Useless Translator</p>
+        <p id="title">Useless Translator</p>
         <p> by Nathan, Jonah, and Viraj</p>
       </header>
-      <!--<div id="rightbar">
-        <h2>To Morse Code</h2>
-        <form name="morsecode">
-        <p>Type in a word or phrase: </p>
-        <input type="text" name="ToMorse" value="">
-        <input type="button" value="To Morse Code" onClick="encodeToMorse()"><br><br>
-        <textarea name="codeboxBin" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
-        </form>
-      </div>
-      <div id="leftbar">
-        <h2>Binary</h2>
-        <form name="binary">
-        <p>Type in a word or phrase: </p>
-        <input type="text" name="ToBin" value="">
-        <input type="button" value="To Binary" onClick="encodeToBin()"><br><br>
-        <textarea name="codeboxMorse" cols="50" rows="11" style="width:70%" wrap="virtual" readonly> </textarea>
-      </form>
-
-      <form name="morsetoeng">
-      Type in a word or phrase: <input type="text" name="chars" size="28" value="Help"> <input type="button" value="To English" onClick="morseToEng()"><BR><BR>
-      <textarea name="codebox" cols="50" rows="11" style="width:70%" wrap="virtual"> </textarea>
-      </form>
-    </div>-->
-    </div>
-        <input id="engtomorse" type="radio" name="language" value="engtomorse" onclick="showEMC()">
+      <form id="settings">
+        <input id="engtomorse" type="radio" name="language" value="engtomorse" checked>
         <label for="engtomorse">English to Morse</label>
-        <input id="morsetoeng" type="radio" name="language" value="Morse to English" onclick="showMEC()">
+        <input id="morsetoeng" type="radio" name="language" value="Morse to English">
         <label for="morsetoeng">Morse to English</label>
-        <input id="engtobin" type="radio" name="language" value="English to Binary" onclick="showEBC()">
+        <input id="engtobin" type="radio" name="language" value="English to Binary">
         <label for="engtobin">English to Binary</label>
-        <input id="bintoeng" type="radio" name="language" value="Binary to English" onclick="showBEC()">
+        <input id="bintoeng" type="radio" name="language" value="Binary to English">
         <label for="bintoeng">Binary to English</label>
         <br>
       </form>
@@ -82,6 +59,7 @@
       <textarea readonly id="bec" style="display: none;" name="data" rows=10 cols=50></textarea>
       <textarea readonly id="ebc" style="display: none;" name="data" rows=10 cols=50></textarea>
       </form>
+    </div>
     <script type="text/javascript" src="assets/js/js.js"></script>
     <script>
     if ('serviceWorker' in navigator) {
@@ -96,5 +74,6 @@
     });
     }
     </script>
+
   </body>
 </html>

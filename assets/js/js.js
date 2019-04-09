@@ -1,3 +1,5 @@
+var settingsForm = document.getElementById("settings");
+
 function showMEC() {
 document.getElementById('mec').style.display = 'block';
 document.getElementById('emc').style.display = 'none';
@@ -12,6 +14,7 @@ document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showEMC() {
 document.getElementById('emc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -26,6 +29,7 @@ document.getElementById('charsme').style.display = 'none';
 document.getElementById('charsbe').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showBEC() {
 document.getElementById('bec').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -40,6 +44,7 @@ document.getElementById('charsem').style.display = 'none';
 document.getElementById('charsme').style.display = 'none';
 document.getElementById('charseb').style.display = 'none';
 }
+
 function showEBC() {
 document.getElementById('ebc').style.display = 'block';
 document.getElementById('mec').style.display = 'none';
@@ -109,9 +114,6 @@ message.split("       ").map(function (word) {
 });
 
   document.Input.mec.value="";
-
-console.log(messageConverted.join(""));
-  //return document.morsetoeng.codebox.value.messageConverted.join("");
   document.Input.mec.value+=messageConverted.join("")
 }
 
@@ -172,7 +174,6 @@ function encodeToMorse() {
     }
     else temp+="\n";
   }
-//  document.Input.emc.value+="\n\n\nEXPLANATION:\n\n"+temp
 }
 
 var charCodesToBin=new Array(80);
@@ -278,7 +279,6 @@ function engtobin() {
     }
     else tempToBin+="\n";
   }
-  //document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
 function binToEng() {
   document.Input.bec.value="";
@@ -291,3 +291,48 @@ for (i = 0; i < newBin.length; i++) {
   }
 document.Input.bec.value += binCode.join("");
 }
+
+settingsForm.addEventListener("click", function(e) {
+  var target = e.target.id;
+  if(target == "engtobin") {
+    showEBC();
+  } else if(target === "bintoeng") {
+    showBEC();
+  } else if(target === "morsetoeng") {
+    showMEC();
+  } else if(target === "engtomorse") {
+    showEMC();
+  }
+});
+
+var CHARSMEE = document.getElementById("charsme");
+CHARSMEE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("me").click();
+  }
+});
+
+var CHARSEME = document.getElementById("charsem");
+CHARSEME.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("em").click();
+  }
+});
+
+var CHARSBEE = document.getElementById("charsbe");
+CHARSBEE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("be").click();
+  }
+});
+
+var CHARSEBE = document.getElementById("charseb");
+CHARSEBE.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("eb").click();
+  }
+});
