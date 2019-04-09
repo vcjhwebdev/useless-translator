@@ -114,9 +114,6 @@ message.split("       ").map(function (word) {
 });
 
   document.Input.mec.value="";
-
-//console.log(messageConverted.join(""));
-  //return document.morsetoeng.codebox.value.messageConverted.join("");
   document.Input.mec.value+=messageConverted.join("")
 }
 
@@ -177,7 +174,6 @@ function encodeToMorse() {
     }
     else temp+="\n";
   }
-//  document.Input.emc.value+="\n\n\nEXPLANATION:\n\n"+temp
 }
 
 var charCodesToBin=new Array(80);
@@ -283,7 +279,6 @@ function engtobin() {
     }
     else tempToBin+="\n";
   }
-  //document.Input.ebc.value+="\n\n\Explanation:\n\n"+tempToBin
 }
 function binToEng() {
   document.Input.bec.value="";
