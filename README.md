@@ -46,9 +46,11 @@ A mostly useless translator for binary and morse code
 
 **Version 1.0**
 
-- Minor CSS changes and release
+- Minor CSS changes
 
 **Version 1.1**
 
 - Keyboard support
 - Release
+- You can find this version over on https://github.com/SwiftNinja99/useless-translator
+- Run at swiftninja99.github.io/useless-translator
